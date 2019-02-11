@@ -24,6 +24,11 @@ nav a#gt-brand {
   color: #44AD47;
 }
 
+div.container {
+  height: 400px;
+  padding-top: 60px;	/* also offset for top fixed nav*/
+}
+
 div.container div.row div.col {
   margin: 12px;
   height: 300px;
