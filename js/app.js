@@ -1,5 +1,8 @@
 $('.nav-item').on('click', function () {
-    $('.navbar-toggler').click();
+    // TODO: 用css判斷方法不好，改掉
+    if ($('.navbar-toggler').css('display') != "none") {
+        $('.navbar-toggler').click();
+    }
 });
 
 var sections = $('.container')
