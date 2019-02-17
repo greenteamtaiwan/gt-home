@@ -10,7 +10,15 @@ var sections = $('.container')
     , nav_height = nav.outerHeight();
 var navItems = $(`.nav-item`);
 
+$(document).ready(function () {
+    setNavItemActive();
+});
+
 $(window).on('scroll', function () {
+    setNavItemActive();
+});
+
+function setNavItemActive() {
     var cur_pos = $(this).scrollTop();
     sections.each(function () {
         var top = $(this).offset().top - nav_height,
@@ -22,4 +30,4 @@ $(window).on('scroll', function () {
             $(`.nav-item[data-id=${id}]`).addClass('active');
         }
     });
-});
+}
