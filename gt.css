@@ -20,7 +20,7 @@ nav a#gt-brand {
   border-bottom: 3px solid #44AD47;
 }
 
-.navbar-nav li.active a#gt-link-active {
+.navbar-nav li.active a {
   color: #44AD47;
 }
 
