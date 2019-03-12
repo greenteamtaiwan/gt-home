@@ -3,6 +3,11 @@ body {
   font-family: 微軟正黑體, Arial;
 }
 
+.logo {
+  height:30px;
+  width:100px;
+}
+
 nav#gt-nav {
   padding: 0 1rem;
   border-bottom: 1px solid #44AD47;
