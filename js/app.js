@@ -1,9 +1,27 @@
-$('.nav-item').on('click', function () {
+$('.nav-item').on('click', function (e) {
     // TODO: 用css判斷方法不好，改掉
     if ($('.navbar-toggler').css('display') != "none") {
         $('.navbar-toggler').click();
     }
+
+    scrollTo(e.target.dataset.id);
 });
+
+function scrollTo(target){
+    var offset;
+    try{
+        document.querySelector(target);
+        offset = document.querySelector(target).offsetTop;
+    }catch(err){
+        return;
+    }
+    
+    var scrollto = offset - 35; // minus fixed header height
+
+    $('html, body').animate({
+        scrollTop: scrollto
+      }, 300);
+ }
 
 var sections = $('.container')
     , nav = $('.navbar-nav')
@@ -27,7 +45,7 @@ function setNavItemActive() {
             navItems.removeClass('active');
 
             let id = $(this)[0].id;
-            $(`.nav-item[data-id=${id}]`).addClass('active');
+            if(id) $(`.nav-item[data-id=${id}]`).addClass('active');
         }
     });
 }
