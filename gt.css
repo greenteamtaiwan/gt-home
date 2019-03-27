@@ -9,6 +9,10 @@ a{
   cursor: pointer;
 }
 
+.container{
+  margin-bottom:20px;
+}
+
 /*--navbar--*/
 .navbar-md{
   display: none;
@@ -58,12 +62,6 @@ div.container {
 
 .no-padding {
   padding: 0;
-}
-
-div.container div.row div.col {
-  margin: 12px;
-  height: 300px;
-  background-color: #C1E2DB;
 }
 
 .store {
@@ -289,13 +287,42 @@ h3 {
   font-weight: bold;
 }
 
-#activities h1, h3{
+#activities h1, #activities h3{
   margin-bottom:5rem;
 }
 
 #activities img{
   width: calc(100% - 40px);
   margin: 0 10px 20px 20px;
+}
+
+/*--idea--*/
+
+.idea-container {
+  background-color: #D8E8DA;
+}
+.idea-aside {
+  background-color: #D8E8DA;
+  margin-left: 20px;
+  text-align: center;
+}
+
+#idea img{
+    width: calc(100% - 40px);
+  margin: 20px;
+}
+
+
+/*7R*/
+
+.pyramid-container{
+  background-color: white;
+  padding: 100px;
+}
+
+.pyramid-container img{
+  margin: auto;
+  display: block;
 }
 
 @media screen and (max-width:991px){
