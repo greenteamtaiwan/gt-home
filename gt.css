@@ -9,9 +9,6 @@ a{
   cursor: pointer;
 }
 
-.container{
-  margin-bottom:20px;
-}
 
 /*--navbar--*/
 .navbar-md{
@@ -297,6 +294,10 @@ h3 {
 }
 
 /*--idea--*/
+
+#idea{
+   margin-top: 20px;
+}
 
 .idea-container {
   background-color: #D8E8DA;
