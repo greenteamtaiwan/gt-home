@@ -1,5 +1,5 @@
 body {
-  background-color: #F0F8F6;
+  background-color: #FAF6F0;
   font-family: 微軟正黑體, Arial;
   color: #231815;
 }
@@ -67,7 +67,6 @@ div.container div.row div.col {
 }
 
 .store {
-  font-size: 1.7rem;
   font-weight: bold;
   text-align: center;
   margin: 40px 0 100px;
@@ -105,6 +104,7 @@ h3 {
 }
 .store-info h4{
   margin-bottom: 1.25rem;
+  color:#9FA0A0;
 }
 
 .carousel-inner img {
@@ -271,6 +271,31 @@ h3 {
   position: absolute;
   right: 10px;
   bottom: 5px;
+}
+
+/*---activities---*/
+
+#activities {
+  background-color: #F1D1D4;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.activities-container {
+  padding: 125px 10px;
+}
+
+#activities h1{
+  font-weight: bold;
+}
+
+#activities h1, h3{
+  margin-bottom:5rem;
+}
+
+#activities img{
+  width: calc(100% - 40px);
+  margin: 0 10px 20px 20px;
 }
 
 @media screen and (max-width:991px){
