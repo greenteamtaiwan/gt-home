@@ -14,6 +14,13 @@ a, button{
   cursor: pointer;
 }
 
+.hide-only-in-lg{
+  display: none;
+}
+.hide-only-in-md{
+  display: block;
+}
+
 .fontSize14{
   font-size: 14px;
 }
@@ -578,6 +585,12 @@ a.primary-button, button.primary-button, #mc_embed_signup input.primary-button{
 }
 
 @media screen and (max-width:991px){
+  .hide-only-in-lg{
+    display: block;
+  }
+  .hide-only-in-md{
+    display: none;
+  }
   .container, .row{
     margin-top: 0;
   }
