@@ -436,6 +436,147 @@ a.primary-button, button.primary-button, #mc_embed_signup input.primary-button{
   height: 60px;
 }
 
+.mascots{
+  cursor: pointer;
+  position: fixed;
+  z-index: 1029;
+  animation: moveMascots 5s infinite ease both;
+  white-space: nowrap;
+  height: 200px;
+  width: 500px;
+  display: none;
+  align-items: flex-end;
+}
+
+.mascots img{
+  width: 100px;
+  position: relative;
+}
+.mascots img:nth-child(1), .mascots img:nth-child(5){
+  animation: mascotJump1 1.1s infinite;
+}
+.mascots img:nth-child(5){
+  animation: mascotJump1 0.8s infinite;
+}
+.mascots img:nth-child(2){
+  animation: mascotJump2 0.8s infinite;
+}
+.mascots img:nth-child(4){
+  animation: mascotJump2 .7s infinite;
+}
+.mascots img:nth-child(3){
+  animation: mascotJump3 0.6s infinite;
+}
+
+.april-fools-day{
+  display: none;
+  background-color: rgba(255,255,255,0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1029;
+}
+.april-fools-day p{
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #44AD47;
+}
+
+@keyframes mascotJump1{
+  0%{
+    top: 0;
+  }
+  47%{
+    top: -100px;
+  }
+  50%{
+    top: -100px;
+  }
+  53%{
+    top: -100px;
+  }
+  100%{
+    top: 0;
+  }
+}
+@keyframes mascotJump2{
+  0%{
+    top: 0;
+  }
+  47%{
+    top: -150px;
+  }
+  50%{
+    top: -150px;
+  }
+  53%{
+    top: -150px;
+  }
+  100%{
+    top: 0;
+  }
+}
+@keyframes mascotJump3{
+  0%{
+    top: 0;
+  }
+  47%{
+    top: -200px;
+  }
+  50%{
+    top: -200px;
+  }
+  53%{
+    top: -200px;
+  }
+  100%{
+    top: 0;
+  }
+}
+
+
+@keyframes moveMascots{
+  /* bottom */
+  0%{
+    bottom: -40px;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(0deg);
+  }
+  /* right */
+  25%{
+    bottom: 50%;
+    left: 80vw;
+    transform: translate(0, 50%) rotate(-90deg);
+  }
+  /* top */
+  50%{
+    bottom: 80vh;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(-180deg);
+  }
+  /* left */
+  75%{
+    bottom: 50%;
+    left: -250px;
+    transform: translate(0, 50%) rotate(-270deg);
+  }
+  /* bottom */
+  100%{
+    bottom: -40px;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(-360deg);
+  }
+}
+
 @media screen and (max-width:991px){
   .container, .row{
     margin-top: 0;
@@ -640,5 +781,43 @@ a.primary-button, button.primary-button, #mc_embed_signup input.primary-button{
   /*--footer--*/
   footer{
     font-size: 12px;
+  }
+
+  .mascots{
+    width: 350px;  }
+  .mascots img{
+    width: 70px;
+  }
+  @keyframes moveMascots{
+    /* bottom */
+    0%{
+      bottom: -40px;
+      left: 50%;
+      transform: translate(-50%, 0) rotate(0deg);
+    }
+    /* right */
+    25%{
+      bottom: 50%;
+      left: 60vw;
+      transform: translate(0, 50%) rotate(-90deg);
+    }
+    /* top */
+    50%{
+      bottom: 80vh;
+      left: 50%;
+      transform: translate(-50%, 0) rotate(-180deg);
+    }
+    /* left */
+    75%{
+      bottom: 50%;
+      left: -200px;
+      transform: translate(0, 50%) rotate(-270deg);
+    }
+    /* bottom */
+    100%{
+      bottom: -100px;
+      left: 50%;
+      transform: translate(-50%, 0) rotate(-360deg);
+    }
   }
 }

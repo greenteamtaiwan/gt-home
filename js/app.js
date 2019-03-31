@@ -30,10 +30,12 @@ var navItems = $(`.nav-item`);
 
 $(document).ready(function () {
     setNavItemActive();
+    showMascots();
 });
 
 $(window).on('scroll', function () {
     setNavItemActive();
+    
 });
 
 function setNavItemActive() {
@@ -70,3 +72,20 @@ function openFBPagePlugin(){
       // Puts focus on the newWindow
       if (window.focus) newWindow.focus();
   }
+
+function showMascots(){
+    const isAprilFoolsDay = new Date().getMonth() === 3 && new Date().getDate() === 1;
+    if((isAprilFoolsDay && sessionStorage.getItem("hideMascots")!=="true") || window.location.hash==="#aprilFoolsDay"){
+        document.querySelector(".mascots").style.display = "flex";
+    }else{
+        document.querySelector(".mascots").style.display = "none";
+    }
+}
+function hideMascots(){
+    sessionStorage.setItem("hideMascots", true);
+    document.querySelector(".mascots").style.display = "none";
+    document.querySelector(".april-fools-day").style.display = "block";
+}
+function hideAprilFoolsDayText(){
+    document.querySelector(".april-fools-day").style.display = "none";
+}
