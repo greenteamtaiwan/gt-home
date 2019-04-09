@@ -334,7 +334,7 @@ h3 {
   padding: 0 30px 0 15px;
 }
 
-.activities-container img{
+.activities-container a > img{
   width: 100%;
 }
 
@@ -374,6 +374,11 @@ h3 {
 .pyramid-container img{
   margin: auto;
   display: block;
+}
+
+/*--divider--*/
+.divider-container {
+  height: 1.7em;
 }
 
 /*--vision--*/
@@ -716,13 +721,7 @@ a.primary-button, button.primary-button, #mc_embed_signup input.primary-button{
     border-bottom: solid 2px #44AD47;
     position: relative;
   }
-  .activities-container a span::after{
-    content: "﹥";
-    position: absolute;
-    right: -20px;
-    bottom: -20px;
-    font-size: 30px;
-  }
+  
   .activities-main{
     padding: 20px 10px;
   }
