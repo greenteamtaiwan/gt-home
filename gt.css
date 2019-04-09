@@ -628,10 +628,15 @@ a.primary-button, button.primary-button, #mc_embed_signup input.primary-button{
     display: block;
   }
   .store-aside{
-    padding: 20px 40px;
+    padding: 20px 30px;
   }
+
   .store-info h3, .store-info h4{
     font-size: 1rem;
+  }
+
+  .store-aside p {
+    margin-left:1rem;
   }
   .store-info{
     flex-direction: row;
