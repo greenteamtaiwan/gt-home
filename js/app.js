@@ -41,7 +41,7 @@ $(window).on('scroll', function () {
 function setNavItemActive() {
     var cur_pos = $(this).scrollTop();
     sections.each(function () {
-        var top = $(this).offset().top - nav_height,
+        var top = $(this).offset().top - nav_height*5,
             bottom = top + $(this).outerHeight();
         if (cur_pos >= top && cur_pos <= bottom) {
             navItems.removeClass('active');
