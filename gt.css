@@ -438,6 +438,12 @@ a.primary-button, button.primary-button, #mc_embed_signup input.primary-button{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.newsletter-contact-us a:hover{
+
+text-decoration: none;
+
+}
+
 /*--partner--*/
 .partner-container{
   padding: 40px;
