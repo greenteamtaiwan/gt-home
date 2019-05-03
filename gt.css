@@ -489,6 +489,10 @@ h3 {
   display:none;
 }
 
+.contact-button {
+  display:none;
+}
+
 /*--partner--*/
 .partner-container {
   padding: 40px;
@@ -922,6 +926,12 @@ h3 {
     text-align: center;
   }
 
+.contact-us-container {
+  text-align: center;
+/*  padding: 100px 50px 50px;*/
+  position: relative;
+}
+
   button.intro-button {
   display: none;
 }
@@ -940,6 +950,13 @@ h3 {
   display: block;
   z-index: 1;
   margin: 0 auto 20px auto;
+}
+
+  .contact-button {
+  width: 150px;
+  display: block;
+  z-index: 1;
+  margin: -50px auto 20px auto;
 }
 
   /*--partner--*/
