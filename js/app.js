@@ -52,26 +52,26 @@ function setNavItemActive() {
     });
 }
 
-function openFBPagePlugin(){
-    PopupCenter("https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fzerowastetaiwan%2F&tabs=timeline%2Cmessages%2Cevents&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=706162263119818", "", 340, 500);
-  }
+// function openFBPagePlugin(){
+//     PopupCenter("https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fzerowastetaiwan%2F&tabs=timeline%2Cmessages%2Cevents&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=706162263119818", "", 340, 500);
+//   }
   
-  function PopupCenter(url, title, w, h) {
-      // Fixes dual-screen position                         Most browsers      Firefox
-      var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
-      var dualScreenTop = window.screenTop != undefined ? window.screenTop : window.screenY;
+//   function PopupCenter(url, title, w, h) {
+//       // Fixes dual-screen position                         Most browsers      Firefox
+//       var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : window.screenX;
+//       var dualScreenTop = window.screenTop != undefined ? window.screenTop : window.screenY;
   
-      var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
-      var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+//       var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+//       var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
   
-      var systemZoom = width / window.screen.availWidth;
-  var left = (width - w) / 2 / systemZoom + dualScreenLeft
-  var top = (height - h) / 2 / systemZoom + dualScreenTop
-      var newWindow = window.open(url, title, 'scrollbars=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+//       var systemZoom = width / window.screen.availWidth;
+//   var left = (width - w) / 2 / systemZoom + dualScreenLeft
+//   var top = (height - h) / 2 / systemZoom + dualScreenTop
+//       var newWindow = window.open(url, title, 'scrollbars=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
   
-      // Puts focus on the newWindow
-      if (window.focus) newWindow.focus();
-  }
+//       // Puts focus on the newWindow
+//       if (window.focus) newWindow.focus();
+//   }
 
 function showMascots(){
     const isAprilFoolsDay = new Date().getMonth() === 3 && new Date().getDate() === 1;
